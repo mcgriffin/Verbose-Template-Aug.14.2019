@@ -269,7 +269,7 @@ A physical exam was performed on the patient.
 			#end
 		#end
 		#if($bodyType == "Other")
-			#if($otherBodyGroup.other)- An exam of the $otherBodyGroup.other exam was performed#nnl()
+			#if($otherBodyGroup.bodyRegionTypeOther)- An exam of the $otherBodyGroup.bodyRegionTypeOther exam was performed#nnl()
 			#{else}- An exam of an other region: Not specified was performed#nnl()
 			#end
 			#if($otherBodyGroup.other == "Grossly Normal") with results being grossly normal.
